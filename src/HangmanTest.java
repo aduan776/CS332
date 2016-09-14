@@ -31,5 +31,7 @@ public class HangmanTest {
 	{
 		assertEquals(5, Hangman.hangman("woman", "nnnnaaaawwwwoooommmm3", 0));
 	}
+	
+	
 
 }

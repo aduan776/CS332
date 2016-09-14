@@ -16,6 +16,11 @@ public class Hangman {
 	
 	static public int hangman (String puzzle, String guesses, int limit) 
 	{
+		if(puzzle==null)
+			throw new NullPointerException("Puzzle Cannot be null");
+		if(guesses==null)
+			throw new NullPointerException("Guesses Cannot be null");
+
 		char g[]=guesses.toCharArray();
 		String regex = new String();
 		int wrong = 0;
