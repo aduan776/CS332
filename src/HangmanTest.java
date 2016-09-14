@@ -32,6 +32,24 @@ public class HangmanTest {
 		assertEquals(5, Hangman.hangman("woman", "nnnnaaaawwwwoooommmm3", 0));
 	}
 	
+	@Test(expected=NullPointerException.class)
+	public void testPuzzleNullException(){
+		assertEquals(-1, Hangman.hangman(null, "abc", 5));
+	}
 	
+	@Test(expected=NullPointerException.class)
+	public void testGuessNullException(){
+		assertEquals(-1, Hangman.hangman("abc", null, 5));
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testIllegalLimit(){
+		assertEquals(-1, Hangman.hangman("abc", "cat", -1));
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testIllegalLimit2(){
+		assertEquals(5, Hangman.hangman("abc", "cat", -1));
+	}
 
 }

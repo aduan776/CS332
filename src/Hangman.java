@@ -20,6 +20,8 @@ public class Hangman {
 			throw new NullPointerException("Puzzle Cannot be null");
 		if(guesses==null)
 			throw new NullPointerException("Guesses Cannot be null");
+		if(!(limit >=0))
+			throw new IllegalArgumentException("Limit must be >= 0");
 
 		char g[]=guesses.toCharArray();
 		String regex = new String();
