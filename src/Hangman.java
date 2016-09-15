@@ -16,7 +16,7 @@
  *  	and two for IllegalArgumentException
  * Pyoung Kang Kim documented the changes in the preconditions and postconditions and cleaned up some of the code 
  * 	formatting and wrote what each member did.
- * /
+ */
 public class Hangman {
 	
 	static public int hangman (String puzzle, String guesses, int limit) 
@@ -25,7 +25,7 @@ public class Hangman {
 			throw new NullPointerException("Puzzle Cannot be null");
 		if(guesses == null)
 			throw new NullPointerException("Guesses Cannot be null");
-		if(!(limit >= 0))
+		if(limit < 0)
 			throw new IllegalArgumentException("Limit must be >= 0");
 
 		char g[]=guesses.toCharArray();
