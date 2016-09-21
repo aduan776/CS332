@@ -14,7 +14,7 @@
  * Alex Duan wrote state checkers in the hangman method for if puzzle == null and if guesses == null.
  * Daniel Quintero wrote a state checker for if !(limit >= 0) and wrote two JUnit tests for NullPointerException 
  *  	and two for IllegalArgumentException
- * Pyoung Kang Kim documented the changes in the preconditions and postconditions and cleaned up some of the code 
+ * Pyoung Kang Kim documented the changes in the preconditions and postconditions, cleaned up some of the code 
  * 	formatting and wrote what each member did.
  */
 public class Hangman {
