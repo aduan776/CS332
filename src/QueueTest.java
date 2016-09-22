@@ -18,12 +18,6 @@ public class QueueTest {
 	}
 	
 	@Test
-	public void testenQueueNullObject(){
-		q = q.enQueue(null);
-		assertEquals(null, q.peek());
-	}
-	
-	@Test
 	public void testDeQueue(){
 		q = q.enQueue(new String("hello"));
 		q = q.enQueue(new String("hi"));
