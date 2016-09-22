@@ -24,7 +24,6 @@ public class Queue <E> {
    }
 
    public Queue<E> enQueue (E e) {
-     elements.add(e);
      ArrayList<E> al = new ArrayList<E>();
      for(E item:elements)
     	 al.add(item);
@@ -35,7 +34,7 @@ public class Queue <E> {
    public Queue<E> deQueue () {
      if (size == 0) throw new IllegalStateException("Queue.deQueue");
      Queue<E> tmp = new Queue<E>();
-     for(int i = 1; i <= size; i++)
+     for(int i = 1; i < size; i++)
     	 tmp = tmp.enQueue(elements.get(i));
      return tmp;
    }
@@ -53,7 +52,7 @@ public class Queue <E> {
      // Usage:  java Queue item1 item2 item3 ...
      Queue <String> q = new Queue <String>();
      for (String arg : args)
-        q.enQueue(arg);
+        q = q.enQueue(arg);
      while (!q.isEmpty() )
      {
         System.out.println(q.peek());
