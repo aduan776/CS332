@@ -34,4 +34,11 @@ public class QueueTest {
 	public void testisEmpty(){
 		assertTrue(q.isEmpty());
 	}
+	
+	@Test
+	public void testisEmptyAfterDequeue(){
+		q = q.enQueue(new String("hello"));
+		q = q.deQueue();
+		assertTrue(q.isEmpty());
+	}
 }
