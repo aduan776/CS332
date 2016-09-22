@@ -7,7 +7,7 @@
 
 /**
  * Pyoung Kang Kim reviewed code and added needed Exceptions in code, specifications and a good portion of test cases.
- * Daniel Quintero read over code and added a good portion of the test cases.
+ * Daniel Quintero also reviewd over code and added a good portion of the test cases.
  * Alex Duan wrote many of the methods including the constructors and a good portion of the mutator/observer methods.
  */
 
