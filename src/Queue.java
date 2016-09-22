@@ -24,6 +24,8 @@ public class Queue <E> {
    }
 
    public Queue<E> enQueue (E e) {
+	   if (e == null)
+		   throw new IllegalArgumentException("Illegal Argument: cannot be null");
      ArrayList<E> al = new ArrayList<E>();
      for(E item:elements)
     	 al.add(item);
