@@ -17,6 +17,11 @@ public class QueueTest {
 		assertEquals("hello", q.peek());
 	}
 	
+	@Test (expected = IllegalArgumentException.class)
+	public void testenQueueNullObject(){
+		q = q.enQueue(null);
+	}
+	
 	@Test
 	public void testDeQueue(){
 		q = q.enQueue(new String("hello"));
