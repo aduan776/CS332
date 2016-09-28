@@ -6,9 +6,9 @@
   */
 
 /**
- * Pyoung Kang Kim reviewed code and added needed Exceptions in code, specifications and a good portion of test cases.
- * Daniel Quintero also reviewd over code and added a good portion of the test cases.
- * Alex Duan wrote many of the methods including the constructors and a good portion of the mutator/observer methods.
+ * Pyoung Kang Kim reviewed code and added needed Exceptions in code, specifications and wrote some test cases.
+ * Daniel Quintero also reviewed over code and added a good portion of the test cases.
+ * Alex Duan wrote many of the methods including the constructors and the mutator/observer methods.
  */
 
 import java.util.*;
