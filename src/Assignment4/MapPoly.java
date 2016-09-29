@@ -2,7 +2,11 @@
  * MapPoly:  Liskov's Poly class, converted to a Map rep.
  * Notes:
  *   0) Engineered for Homework 4, 2016; hence not a model implementation
+ *   For this assignment, Alex Duan wrote the Rep Invariant, verified the tests, screen captured the test behavior, and verified which methods would not work under a HashMap
+ *   Daniel Quintero wrote test cases to verify the behavior of the MapPoly class methods and the RepOk() method and also checked over code.
+ *   Pyoung Kang Kim wrote the repOk() method and also wrote test cases to check that the MapPoly class passed or failed the repOk() method.  
  */
+
 import java.util.*;
 
 public class MapPoly {
