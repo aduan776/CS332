@@ -31,7 +31,7 @@ public class MapPolyTests {
 	}
 
 	@Before
-	public void createThreeTermsPoly() {
+	public void createPoly() {
 		poly = new MapPoly(23423434, 234234);
 		poly = poly.add(new MapPoly(999, 11));
 	}
@@ -51,12 +51,15 @@ public class MapPolyTests {
 	// ran out of time :(
 	// if minus breaks order, please prove to me with a test case
 	// if minus does not, also prove it to me 
-		
+		poly = poly.minus();
+		assertEquals(false, repOk(poly));
 	}
 	
 	
 	@Test
 	public void multiplyBreaksOrKeepsMonotonicOrder(){
 	// also ran out of time. One of you guys should do each of this test cases!
+		poly = poly.mul(new MapPoly (2, 4));
+		assertEquals(false, repOk(poly));
 	}
 }
