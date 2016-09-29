@@ -44,22 +44,21 @@ public class MapPolyTests {
 	@Test
 	public void addBreaksMonotonicOrder() {
 		assertEquals(false, repOk(poly));
+		assertEquals(false, "MapPoly: + 999x^11 + 23423434x^234234".equals(poly.toString()));
 	}
 	
 	@Test
 	public void minusBreaksOrKeepsMonotonicOrder(){
-	// ran out of time :(
-	// if minus breaks order, please prove to me with a test case
-	// if minus does not, also prove it to me 
 		poly = poly.minus();
 		assertEquals(false, repOk(poly));
+		assertEquals(false, "MapPoly: - 999x^11 - 23423434x^234234".equals(poly.toString()));
 	}
 	
 	
 	@Test
 	public void multiplyBreaksOrKeepsMonotonicOrder(){
-	// also ran out of time. One of you guys should do each of this test cases!
 		poly = poly.mul(new MapPoly (2, 4));
 		assertEquals(false, repOk(poly));
+		assertEquals(false, "MapPoly: + 1998x^44 + 46846868x^936936".equals(poly.toString()));
 	}
 }
