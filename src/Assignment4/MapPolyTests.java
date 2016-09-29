@@ -43,8 +43,6 @@ public class MapPolyTests {
 
 	@Test
 	public void addBreaksMonotonicOrder() {
-		poly = new MapPoly(23423434, 234234);
-		poly = poly.add(new MapPoly(999, 11));
 		assertEquals(false, repOk(poly));
 	}
 	
@@ -53,6 +51,7 @@ public class MapPolyTests {
 	// ran out of time :(
 	// if minus breaks order, please prove to me with a test case
 	// if minus does not, also prove it to me 
+		
 	}
 	
 	

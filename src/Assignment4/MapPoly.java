@@ -29,7 +29,8 @@ public class MapPoly {
        if (n < 0) {
           throw new IllegalArgumentException("MapPoly(int, int) constructor");
        }
-       trms = new TreeMap<Integer, Integer> ();
+       //trms = new TreeMap<Integer, Integer> ();
+       trms = new HashMap<Integer, Integer> ();
        if (c != 0) { trms.put(n, c); }
     }
 
