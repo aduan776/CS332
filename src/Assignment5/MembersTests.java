@@ -22,6 +22,7 @@ public class MembersTests {
 		members.join("Paul");
 		assertEquals(true, members.repOk2());
 	}
+	
 	//This test should fail, please delete this comment after you edit code Alex or Daniel
 	@Test
 	public void testMembersSatisfiesRepInvButBreaksContract() {
