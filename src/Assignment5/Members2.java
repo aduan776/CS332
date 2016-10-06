@@ -30,18 +30,22 @@ public class Members2 {
 
 	// Post: person becomes a member
 	public void join(String person) {
+		if(person == null)
+			throw new IllegalArgumentException("Null person cannot be passed into join");	
 		if (!isMember(person))
 		members.add(person);
 	}
 
 	// Post: person is no longer a member
 	public void leave(String person) {
+		if(person == null)
+			throw new IllegalArgumentException("Null person cannot be passed into leave");
 		members.remove(person);
 	}
 	
 	public boolean isMember(String person) {
 		if (person == null)
-			throw new NullPointerException("Members2.isMember");
+			throw new IllegalArgumentException("Null person cannot be passed into isMember");
 		return members.contains(person);
 	}
 }

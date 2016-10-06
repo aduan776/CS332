@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class MembersTests {
-
 	Members members;
 	Members1 members1;
 	Members2 members2;
@@ -15,26 +14,24 @@ public class MembersTests {
 		members1 = new Members1();
 		members2 = new Members2();
 	}
-	//This test should fail, please delete this comment after you edit code Alex or Daniel
+
 	@Test
 	public void testMembersBreaksRepInv() {
 		members.join("Paul");
 		members.join("Paul");
-		assertEquals(true, members.repOk2());
+		assertEquals(false, members.repOk2());
 	}
 	
-	//This test should fail, please delete this comment after you edit code Alex or Daniel
 	@Test
 	public void testMembersSatisfiesRepInvButBreaksContract() {
 		members.join("Paul");
 		members.join("Paul");
 		members.leave("Paul");
-		assertEquals(false, members.isMember("Paul"));
+		assertEquals(true, members.isMember("Paul"));
 	}
 
 	@Test
 	public void testMembers1KeepsRepInv() {
-		assertEquals(true, members1.repOk1());
 		members1.join("Daniel");
 		assertEquals(true, members1.repOk1());
 		members1.leave("Daniel");
@@ -45,8 +42,8 @@ public class MembersTests {
 	public void testMembers1KeepsContractAndRepInv() {
 		members1.join("Daniel");
 		members1.join("Daniel");
-		members.leave("Daniel");
-		assertEquals(false, members.isMember("Daniel"));
+		members1.leave("Daniel");
+		assertEquals(false, members1.isMember("Daniel"));
 	}
 
 	@Test

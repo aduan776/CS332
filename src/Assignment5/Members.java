@@ -31,18 +31,16 @@ public class Members {
 	// Post: 
 	// person becomes a member, throw IllegalArgument if null passed in
 	public void join(String person) {
-		if(person == null){
-			throw new IllegalArguementException("Null person cannot be passed into join");
-		}		
+		if(person == null)
+			throw new IllegalArgumentException("Null person cannot be passed into join");		
 		members.add(person);
 	}
 
 	// Post: 
 	// person is no longer a member, throw IllegalArgument if null passed in
 	public void leave(String person) {
-		if(person == null){
-			throw new IllegalArguementException("Null person cannot be passed into leave")
-		}
+		if(person == null)
+			throw new IllegalArgumentException("Null person cannot be passed into leave");		
 		members.remove(person);
 	}
 
@@ -50,7 +48,7 @@ public class Members {
 	//true/false if is member, if null throw IllegalArgument
 	public boolean isMember(String person) {
 		if (person == null)
-			throw new IllegalArguementException("Null person cannot be passed into isMember");
+			throw new IllegalArgumentException("Null person cannot be passed into isMember");
 		return members.contains(person);
 	}
 }

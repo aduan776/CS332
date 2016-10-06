@@ -27,14 +27,14 @@ public class Members1 {
 	// Post: person becomes a member
 	public void join(String person) {
 		if(person == null)
-			throw new IllegalArguementException("Null person cannot be passed into join");		
+			throw new IllegalArgumentException("Null person cannot be passed into join");		
 		members.add(person);
 	}
 
 	// Post: person is no longer a member
 	public void leave(String person) {
 		if(person == null)
-			throw new IllegalArguementException("Null person cannot be passed into leave");
+			throw new IllegalArgumentException("Null person cannot be passed into leave");
 		while (members.contains(person)) {
 			   members.remove(person);
 		}
@@ -42,7 +42,7 @@ public class Members1 {
 	
 	public boolean isMember(String person) {
 		if (person == null)
-			throw new IllegalArguementException("Null person cannot be passed into isMember");
+			throw new IllegalArgumentException("Null person cannot be passed into isMember");
 		return members.contains(person);
 	}
 }
