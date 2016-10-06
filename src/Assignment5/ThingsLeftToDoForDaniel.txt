@@ -1,0 +1,37 @@
+Daniel, I have to sleep sometime soon lol... 
+This assignment didn't take long at all :) so the rest should be pretty simple
+and straightforward..
+
+Here is what is left for you to do, 
+
+Before you do anything, get the PPT file from the website and familiarize
+yourself with the task at hand.. Now that's over with
+
+First of all, look at this part of the assignment 
+
+3: Clean up the contracts (and the code!) so that null persons can't join or
+leave. Either JavaDoc or postcondition descriptions are fine. Note that you'll
+have to decide what to do about null arguments to the observer method
+isMember().
+
+I purposely deleted some of Alex's initial code so you can go ahead and fill
+in this part in. Try to be a little bit more careful to fulfill all
+requirements for that part 3 above. If you want to know what I am talking
+about regarding part 3, look at MembersOld.java and Members1Old.java and
+Members2Old.java. Some of the cases where you try to give the argument null
+for join is handled, but some I think might be missing. Either way please
+revise the code for us from this Members.java and Members1.java and
+Members2.java. 
+
+
+
+Secondly, please write our contributions in the GroupContributions.txt file!
+You can say that Alex wrote the Members and Members1, I wrote the Test Cases and
+Member2 and you cleaned up our code and contracts so that null persons can't
+join or leave and you helped write some of the methods in Members1 and
+Member2, namely the join method. You can also say that you wrote this group
+contributions..
+
+
+Lastly, please delete this file along with the MembersOld1(2)(3).java files,
+all three of them please. Thank you Daniel, see you in class bruh.
