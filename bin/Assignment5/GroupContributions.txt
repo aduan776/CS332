@@ -1,8 +1,0 @@
-Group: Daniel Quintero, Pyoung Kang Kim, Alex Duan
-
-Alex wrote the initial code for Members and Members1.
-Paul wrote the intial code for Test Cases and Member2.
-Daniel cleaned all the code and contracts so that null persons can't
-join or leave and helped make sure the fixes for Members1 and Members2 matched the ppt slides. 
-Daniel also wrote this contributions.txt
-
