@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class Assignment6Test {
+public class FilterIteratorTest {
 
 	@Test
 	public void test() {
