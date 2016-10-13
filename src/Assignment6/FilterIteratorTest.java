@@ -3,6 +3,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -36,6 +37,7 @@ public class FilterIteratorTest {
 		filterIterator.next();
 		assertEquals(true, filterIterator.hasNext());
 		filterIterator.next();
+		assertEquals(false, filterIterator.hasNext());
 	}
 
 	@Test
@@ -44,6 +46,14 @@ public class FilterIteratorTest {
 		filterIterator.next();
 		filterIterator.next();
 		assertEquals(false, filterIterator.hasNext());
+	}
+	
+	@Test(expected = NoSuchElementException.class)
+	public void testNoSuchElementExceptionAfterThreeNexts(){
+		filterIterator.next();
+		filterIterator.next();
+		filterIterator.next();
+		filterIterator.next();
 	}
 
 	@Test(expected = UnsupportedOperationException.class)
