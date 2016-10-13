@@ -1,8 +1,4 @@
 
-public class Check {
-	public boolean checker(Integer i)
-	{
-		return i%2==0;
-	}
-
+public interface Check<E> {
+	public boolean checker(E object);
 }
