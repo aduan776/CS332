@@ -13,10 +13,15 @@ public class ClientClass {
 		list.addAll(Arrays.asList(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5));
 	}
 
-	class Comparator<E> implements Comparable<E> {
-		
+	class Comparator<Integer> implements Comparable<Integer> {
+		Integer i;
+		public Comparator(Integer e)
+		{
+			this.i = e;
+		}
 		@Override
-		public int compareTo(E arg0) {
+		public int compareTo(Integer o) {
+			// TODO Auto-generated method stub
 			return 0;
 		}
 	}
