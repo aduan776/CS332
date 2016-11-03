@@ -1,0 +1,30 @@
+* ************************** *
+* 	Failing Property     * 
+* ************************** * 
+
+
+The failing property of Point3 and Point2 is the transivity property.
+The Point3Tests.testTransitivity shows this with the line.
+
+assertEquals(false,p1.equals(p3));
+
+Also, the other
+tests demonstrate the validity of the other two propertiest (Liskov's
+Substitution property & Symmetric Property)
+
+
+* ************************** *
+* Statement of Contributions * 
+* ************************** * 
+
+Alex Duan wrote the initial Point2 class and Daniel Quintero wrote down the Point3 class
+referencing Liskov's pg 182 code. Alex then wrote Point3Tests.testSymmetryP2 and
+Point3Tests.testSymmetryP3. Daniel showed that the failing property is
+the transitivity by writing that crucial test case. Pyoung Kang Kim made sure
+that the code is correct and added Point2.equals with the method signiature
+Point2 p to fulfill the "overriden" method for Point3. He also added @Override to
+ensure that we actually overrode the method intended. He also wrote the
+Point3Tests.testSymmetry Point3Tests.testLSPPropertiesRuleCompiles
+Point3Tests.testLSPMethoodsRule and Point3Tests.testLSPSigniatureRuleCompiles
+and its comments and this FailingProperty_and_StatementOfContribution.txt
+file. 
