@@ -16,6 +16,10 @@ public class ColorPoint {
 		this.color = color;
 	}
 
+	public point getPoint() {
+		return p;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof ColorPoint))
