@@ -17,12 +17,12 @@ Substitution property & Symmetric Property)
 * ************************** * 
 
 Alex Duan wrote the initial Point2 class and Daniel Quintero wrote down the Point3 class
-referencing Liskov's pg 182 code. Alex also helped explain what we were supposed to do for
+referencing Liskov's pg. 182 code. Alex also helped explain what we were supposed to do for
 this homework assignment to give us a kickstart. Alex then wrote Point3Tests.testSymmetryP2 and
-Point3Tests.testSymmetryP3 which helped get the momemtum going. Daniel then showed that the failing 
+Point3Tests.testSymmetryP3 which helped get the momentum going. Daniel then showed that the failing 
 property is the transitivity by writing that crucial test case above. Pyoung Kang Kim made sure
-that the code is correct and added Point2.equals with the method signiature
-Point2 p to fulfill the "overriden" method for Point3. He also added @Override to
+that the code is correct and added Point2.equals with the method signature
+Point2 p to fulfill the "overridden" method for Point3. He also added @Override to
 ensure that we actually overrode the method intended. He also wrote the
 Point3Tests.testSymmetry Point3Tests.testLSPPropertiesRuleCompiles
 Point3Tests.testLSPMethoodsRule and Point3Tests.testLSPSigniatureRuleCompiles
