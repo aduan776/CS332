@@ -2,10 +2,15 @@ Pyoung Kang Kim wrote the crux of the Junit Theories for this assignment with
 Alex Duan writing the Theory " equalsShouldBeSymmetric ". and 
 Daniel Quintero writing the Theory " ifEqualsThenHashCodeIsSame ". 
 
-Alex Duan helped Pyoung write up and figure out the ColorPoint class and Point class, 
-specifically how to use composition instead of inheritance specifically figuring out 
-to write the Point inside the ColorPoint and writing the constructors for both classes.
+Alex Duan and Pyoung got together online to write up and figure out the ColorPoint class 
+and Point class, specifically how to use composition instead of inheritance specifically 
+figuring out to write the Point inside the ColorPoint and writing the constructors 
+for both classes.
 
-Daniel Quintero helped write the standard recipe for equals in ColorPoint and Point.
-Alex Duan wrote the hashCode for ColorPoint and Point.
+Daniel Quintero wrote the standard recipe for equals in ColorPoint and Point 
+along with Alex and Pyoung ensuring correctness.
+
+Alex Duan wrote the hashCode for ColorPoint and Pyoung writing for Point, both following
+Bloch's guide.
+
 Daniel Quintero wrote this statement of contribution.
