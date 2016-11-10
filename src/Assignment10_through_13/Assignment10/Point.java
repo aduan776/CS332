@@ -1,5 +1,3 @@
-package week9;
-
 public class Point {
 	private final int x;
 	private final int y;
