@@ -23,23 +23,31 @@ From our JUnit Test
 		assertEquals(false, set.equals(c));
 	}
 
-Here the first assertion is true. This is because the InstrumentedSet is a wrapper by extending the ForwardingSet and therefore
-will call on its underlying and composed Set field for its equals recursively until it reaches the true most bottom concrete
-set instance, which in our case was a HashSet. We only wrapped it once so it will call it directly, but that means that in the end
-it calls upon the equals in the HashSet class. In the HashSet class, when comparing the same HashSet, it returns true due to its 
+Here the first assertion is true. This is because the InstrumentedSet is a wrapper 
+by extending the ForwardingSet and therefore will call on its underlying and composed 
+Set field for its equals recursively until it reaches the true most bottom concrete
+set instance, which in our case was a HashSet. We only wrapped it once so it will call
+it directly, but that means that in the end it calls upon the equals in the HashSet class.
+In the HashSet class, when comparing the same HashSet, it returns true due to its 
 contract which  from JavaDocs says
 
-"true if the specified object is also a set, the two sets have the same size, and every member of the specified set is contained in this set (or equivalently, every member of this set is contained in the specified set). This definition ensures that the equals method works properly across different implementations of the set interface."
+"true if the specified object is also a set, the two sets have the same size, and every member 
+of the specified set is contained in this set (or equivalently, every member of this set is
+contained in the specified set). This definition ensures that the equals method works properly 
+across different implementations of the set interface."
 
-The problem with the second assertion is related to the contract as well. When we call equals on set, a direct Object referencing
-HashSet, it will call the HashSet equals. The HashSet equals checks to see if the object it is being compared to is also a set.
-This is precisely where the problem is. Because the object passed in was a Collection(which is not a set, though a set is a Collection), it will evaluate to false here.
+The problem with the second assertion is related to the contract as well. When we call 
+equals on set, a direct Object referencing HashSet, it will call the HashSet equals.
+The HashSet equals checks to see if the object it is being compared to is also a set.
+This is precisely where the problem is. Because the object passed in was a
+Collection(which is not a set, though a set is a Collection), it will evaluate to false here.
 
 *****************************
 *  Explanation For Part 2   *
 *****************************
 
-There is not a problem for the equals contract for lists and maps when using equals for a wrapper of their underlying type as demonstrated in test cases 
+There is not a problem for the equals contract for lists and maps when using equals
+for a wrapper of their underlying type as demonstrated in test cases 
 equalsSymmetryHoldsForListWrapperAndLists
 equalsTransitivityHoldsForListWrapperAndLists
 equalsSymmetryHoldsForMapWrapperAndMaps
@@ -56,4 +64,6 @@ But For the same reason as Part 1 that Collection is not a List, it will fail fo
 		assertEquals(false, list.equals(c));
 	}
 
-Maps were a special case to where we couldn't implement a uniformly simliar wrapped map in the InstrumentedCollection. This was because maps hold key and value pair, let's call this tuple. However, for other collections such as Set and List, it holds a one value tuple for each colleciton.
+Maps were a special case to where we couldn't implement a uniformly simliar wrapped map
+in the InstrumentedCollection. This was because maps hold key and value pair, let's call 
+this tuple. However, for other collections such as Set and List, it holds a one value tuple for each colleciton.
