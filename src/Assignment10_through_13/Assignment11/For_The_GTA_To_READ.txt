@@ -37,7 +37,7 @@ contained in the specified set). This definition ensures that the equals method 
 across different implementations of the set interface."
 
 The problem with the second assertion is related to the contract as well. When we call 
-equals on set, a direct Object referencing HashSet, it will call the HashSet equals.
+equals on variable set, a direct "pointer to an object" referencing HashSet, it will call the HashSet equals.
 The HashSet equals checks to see if the object it is being compared to is also a set.
 This is precisely where the problem is. Because the object passed in was a
 Collection(which is not a set, though a set is a Collection), it will evaluate to false here.
