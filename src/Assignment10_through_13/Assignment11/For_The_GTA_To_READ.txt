@@ -2,8 +2,7 @@
 * Statement Of Contributions *
 ******************************
 
-// For you guys to update this section of the GTA TO READ SECTION
-
+For this assignment, we all met together to work on this homework.  Alex Duan wrote the majority of the codebase, with assistance from Paul, who also wrote up the Explanations for Part 1 and Part 2 of this document.  Daniel Quintero wrote the majority of the test cases, which Paul also assisted with.  
 
 
 *****************************
@@ -64,6 +63,6 @@ But For the same reason as Part 1 that Collection is not a List, it will fail fo
 		assertEquals(false, list.equals(c));
 	}
 
-Maps were a special case to where we couldn't implement a uniformly simliar wrapped map
+Maps were a special case to where we couldn't implement a uniformly similarly wrapped map
 in the InstrumentedCollection. This was because maps hold key and value pair, let's call 
-this tuple. However, for other collections such as Set and List, it holds a one value tuple for each colleciton.
+this tuple. However, for other collections such as Set and List, it holds a one value tuple for each collection.
